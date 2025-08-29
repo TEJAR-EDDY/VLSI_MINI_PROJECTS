@@ -1,5 +1,5 @@
 
-# 📝 Synchronous & Asynchronous FIFO Design in Verilog
+# 📝 Synchronous & Asynchronous FIFO Design & Verification using Verilog_HDL
 
 ## 📌 Project Overview
 
@@ -130,3 +130,4 @@ gtkwave async_fifo_tb.vcd
 ✨ This project is part of my **self-learning journey in VLSI design and verification**.
 
 ---
+
