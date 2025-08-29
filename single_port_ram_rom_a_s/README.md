@@ -97,7 +97,7 @@ gtkwave memory_simulation.vcd
 ## 📊 Example Waveforms
 
 Below are example waveforms captured during simulation:
-*https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/single_port_ram_rom_a_s/Simulation_Results*
+* https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/single_port_ram_rom_a_s/Simulation_Results *
 ---
 
 ## ✅ Verification Summary
@@ -140,4 +140,5 @@ The testbench verifies:
 ✨ *This project was implemented as part of my self-learning journey in Digital Design & Verification using Verilog HDL.*
 
 ---
+
 
