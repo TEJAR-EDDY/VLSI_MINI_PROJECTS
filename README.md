@@ -1,11 +1,3 @@
-Perfect ✅ You want a **GitHub README.md** that looks simple, human-written, professional, and highlights your **self-learning VLSI mini projects**.
-I’ll draft it for you in a way that makes your repo **stand out** for recruiters and others who visit.
-
-Here’s a ready-to-use **README.md** content 👇
-
----
-
-````markdown
 # VLSI Mini Projects in Verilog HDL 🚀
 
 This repository contains my self-developed **VLSI mini projects** implemented in **Verilog HDL**.  
@@ -37,51 +29,38 @@ Each project includes Verilog design files, testbenches, and simulation support.
    ```bash
    git clone https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE.git
    cd VLSI_MINI_PROJECTS_FE
-````
+Go to any Project Folder
 
-2. **Go to any Project Folder**
+cd traffic_light_controller
 
-   ```bash
-   cd traffic_light_controller
-   ```
 
-3. **Compile the Design and Testbench using Icarus Verilog**
+Compile the Design and Testbench using Icarus Verilog
 
-   ```bash
-   iverilog -o output design.v testbench.v
-   ```
+iverilog -o output design.v testbench.v
 
-4. **Run the Simulation**
 
-   ```bash
-   vvp output
-   ```
+Run the Simulation
 
-5. **View the Waveform**
+vvp output
 
-   ```bash
-   gtkwave dump.vcd
-   ```
 
----
+View the Waveform
 
-## 📖 Learning Outcome
+gtkwave dump.vcd
+
+📖 Learning Outcome
 
 Through these projects, I practiced:
 
-* RTL coding in Verilog
-* Writing effective testbenches
-* Simulation and waveform analysis
-* Understanding digital design concepts (FSMs, memory, and controllers)
+RTL coding in Verilog
 
----
+Writing effective testbenches
 
-## 🌟 About
+Simulation and waveform analysis
 
-This repository is part of my **self-learning initiative** in VLSI design and verification.
-It demonstrates my ability to design and verify digital circuits using **industry-standard practices** in Verilog HDL.
+Understanding digital design concepts (FSMs, memory, and controllers)
 
----
+🌟 About
 
-
-```
+This repository is part of my self-learning initiative in VLSI design and verification.
+It demonstrates my ability to design and verify digital circuits using industry-standard practices in Verilog HDL.
