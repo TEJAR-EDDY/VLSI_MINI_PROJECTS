@@ -92,15 +92,6 @@ https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/single_port_ram_ro
 
 ---
 
-## 📈 Results & Analysis
-
-* **Synchronous designs** achieve **200–250 MHz** on FPGA (Xilinx Artix-7)
-* **Asynchronous RAM** achieves **1–2 ns access delay** (combinational)
-* **Minimal resource usage**: \~50–80 LUTs, \~30 registers
-* **Conflict handling overhead**: negligible
-
----
-
 ## 📚 References
 
 1. [Xilinx Vivado UG901: Simple Dual-Port RAM Verilog](https://docs.amd.com/r/en-US/ug901-vivado-synthesis/Simple-Dual-Port-Block-RAM-with-Dual-Clocks-Verilog)
@@ -117,3 +108,4 @@ I built it to **strengthen my fundamentals in memory design**, FSM modeling, and
 Feel free to **fork, star ⭐, and suggest improvements**!
 
 ---
+
