@@ -1,0 +1,134 @@
+=== SYNCHRONOUS FIFO TESTBENCH STARTED ===
+Time            Operation       Data_in Data_out        Full    Empty
+VCD warning: sync_fifo_tb.v:185: $dumpfile called after $dumpvars started,
+                                 using existing file (async_fifo_tb.vcd).
+30000   RESET           00      00      0       1
+
+--- Test 2: Filling FIFO ---
+45000   WRITE           01      00      0       0
+=== ASYNC FIFO WRITE PROCESS STARTED ===
+Write: 60000 - Data=00, Count=1, Full=0
+65000   WRITE           02      00      0       0
+85000   WRITE           03      00      0       0
+Write: 92000 - Data=01, Count=2, Full=0
+105000  WRITE           04      00      0       0
+Write: 108000 - Data=02, Count=3, Full=0
+Write: 124000 - Data=03, Count=4, Full=0
+125000  WRITE           05      00      0       0
+=== ASYNC FIFO READ PROCESS STARTED ===
+Write: 140000 - Data=04, Count=5, Full=0
+145000  WRITE           06      00      0       0
+Read:  150000 - Data=00, Count=0, Empty=0
+Write: 156000 - Data=05, Count=6, Full=0
+165000  WRITE           07      00      0       0
+Write: 172000 - Data=06, Count=7, Full=0
+185000  WRITE           08      00      0       0
+Read:  186000 - Data=01, Count=1, Empty=0
+Write: 188000 - Data=07, Count=8, Full=0
+205000  WRITE           09      00      0       0
+Write: 212000 - Data=08, Count=9, Full=0
+Read:  222000 - Data=02, Count=2, Empty=0
+225000  WRITE           0a      00      0       0
+Write: 228000 - Data=09, Count=10, Full=0
+Write: 244000 - Data=0a, Count=11, Full=0
+245000  WRITE           0b      00      0       0
+Read:  258000 - Data=03, Count=3, Empty=0
+265000  WRITE           0c      00      0       0
+Write: 268000 - Data=0b, Count=12, Full=0
+Write: 284000 - Data=0c, Count=13, Full=0
+285000  WRITE           0d      00      0       0
+Read:  294000 - Data=04, Count=4, Empty=0
+Write: 300000 - Data=0d, Count=14, Full=0
+305000  WRITE           0e      00      0       0
+Write: 316000 - Data=0e, Count=15, Full=0
+Read:  318000 - Data=05, Count=5, Empty=0
+325000  WRITE           0f      00      0       0
+Write: 332000 - Data=0f, Count=16, Full=0
+Read:  342000 - Data=06, Count=6, Empty=0
+345000  WRITE           10      00      1       0
+Write: 348000 - Data=10, Count=17, Full=0
+Write: 364000 - Data=11, Count=18, Full=0
+365000  WRITE(FULL)     ff      00      1       0
+
+--- Test 4: Reading FIFO ---
+Write: 380000 - Data=12, Count=19, Full=0
+385000  READ            ff      01      0       0
+Read:  390000 - Data=07, Count=7, Empty=0
+Write: 396000 - Data=13, Count=20, Full=0
+405000  READ            ff      02      0       0
+Write: 412000 - Data=14, Count=21, Full=0
+Read:  414000 - Data=xx, Expected=08, ERROR!
+425000  READ            ff      03      0       0
+Write: 428000 - Data=15, Count=22, Full=0
+Read:  438000 - Data=xx, Expected=09, ERROR!
+Write: 444000 - Data=16, Count=23, Full=0
+445000  READ            ff      04      0       0
+Write: 460000 - Data=17, Count=24, Full=0
+465000  READ            ff      05      0       0
+Write: 484000 - Data=18, Count=25, Full=0
+485000  READ            ff      06      0       0
+Read:  486000 - Data=xx, Expected=0a, ERROR!
+Write: 500000 - Data=19, Count=26, Full=0
+505000  READ            ff      07      0       0
+Write: 516000 - Data=1a, Count=27, Full=0
+525000  READ            ff      08      0       0
+Write: 532000 - FIFO FULL, waiting...
+Read:  534000 - Data=0b, Count=11, Empty=0
+545000  READ            ff      09      0       0
+Write: 548000 - FIFO FULL, waiting...
+Read:  558000 - Data=0c, Count=12, Empty=0
+Write: 564000 - Data=1b, Count=28, Full=0
+565000  READ            ff      0a      0       0
+Write: 580000 - Data=1c, Count=29, Full=0
+Read:  582000 - Data=0d, Count=13, Empty=0
+585000  READ            ff      0b      0       0
+Write: 596000 - FIFO FULL, waiting...
+605000  READ            ff      0c      0       0
+Read:  606000 - Data=0e, Count=14, Empty=0
+Write: 612000 - Data=1d, Count=30, Full=0
+625000  READ            ff      0d      0       0
+Write: 644000 - Data=1e, Count=31, Full=0
+645000  READ            ff      0e      0       0
+Write: 660000 - FIFO FULL, waiting...
+665000  READ            ff      0f      0       0
+Read:  666000 - Data=0f, Count=15, Empty=0
+685000  READ            ff      10      0       1
+Read:  690000 - Data=10, Count=16, Empty=0
+Write: 692000 - Data=1f, Count=32, Full=0
+705000  READ(EMPTY)     ff      10      0       1
+
+--- Test 6: Simultaneous Read/Write ---
+Write: 716000 - Data=20, Count=33, Full=0
+Write: 732000 - FIFO FULL, waiting...
+Read:  738000 - Data=11, Count=17, Empty=0
+Write: 748000 - FIFO FULL, waiting...
+Read:  762000 - Data=12, Count=18, Empty=0
+Write: 772000 - Data=21, Count=34, Full=0
+Write: 788000 - Data=22, Count=35, Full=0
+Read:  810000 - Data=13, Count=19, Empty=0
+Write: 812000 - FIFO FULL, waiting...
+Read:  834000 - Data=14, Count=20, Empty=0
+Write: 844000 - Data=23, Count=36, Full=0
+Read:  858000 - Data=15, Count=21, Empty=0
+Write: 860000 - Data=24, Count=37, Full=0
+Write: 884000 - Data=25, Count=38, Full=0
+885000  RD/WR           b0      a0      0       0
+Read:  894000 - Data=16, Count=22, Empty=0
+Write: 900000 - FIFO FULL, waiting...
+905000  RD/WR           b1      a1      0       0
+Write: 916000 - Data=26, Count=39, Full=0
+925000  RD/WR           b2      a2      0       0
+Write: 932000 - FIFO FULL, waiting...
+Read:  942000 - Data=17, Count=23, Empty=0
+945000  RD/WR           b3      a3      0       0
+Write: 956000 - FIFO FULL, waiting...
+965000  RD/WR           b4      a4      0       0
+Write: 972000 - Data=27, Count=40, Full=0
+Read:  978000 - Data=xx, Expected=18, ERROR!
+=== WRITE PROCESS COMPLETED ===
+Read:  1002000 - Data=xx, Expected=19, ERROR!
+
+=== TESTBENCH COMPLETED ===
+Total Errors: 0
+*** ALL TESTS PASSED ***
+sync_fifo_tb.v:180: $finish called at 1015000 (1ps)

@@ -1,0 +1,69 @@
+ROM Contents:
+Address 0: 00
+Address 1: 02
+Address 2: 06
+Address 3: 0c
+Address 4: 14
+Address 5: 1e
+Address 6: 2a
+Address 7: 38
+Address 8: 48
+Address 9: 5a
+Address 10: 6e
+Address 11: 84
+Address 12: 9c
+Address 13: b6
+Address 14: d2
+Address 15: f0
+---- Asynchronous Dual-Port ROM Contents ----
+Address 0 : 00
+Address 1 : 02
+Address 2 : 06
+Address 3 : 0c
+Address 4 : 14
+Address 5 : 1e
+Address 6 : 2a
+Address 7 : 38
+Address 8 : 48
+Address 9 : 5a
+Address 10 : 6e
+Address 11 : 84
+Address 12 : 9c
+Address 13 : b6
+Address 14 : d2
+Address 15 : f0
+VCD info: dumpfile dual_port_memory.vcd opened for output.
+==========================================
+  DUAL PORT MEMORY VERIFICATION STARTED
+==========================================
+
+--- Test Suite 1: Single Port Operations ---
+PASS: Port A Expected A5, Got a5
+PASS: Port B Expected 3C, Got 3c
+
+--- Test Suite 2: Dual Port Simultaneous Operations ---
+PASS: Simul Read A:A5 B:3C
+PASS: Simultaneous Write/Read OK
+
+--- Test Suite 3: Address Conflict ---
+Warning: Write conflict detected at time 0
+Address: c, Port A Data: aa, Port B Data: bb
+PASS: Conflict Same Addr Write -> Port A Wins (AA)
+
+--- Test Suite 4: ROM Verification ---
+PASS: ROM Lookup OK
+
+--- Test Suite 5: Async Memories ---
+PASS: Async RAM Write/Read OK
+Warning: Write conflict detected at time 0
+Address: 6, Port A Data: 11, Port B Data: 22
+PASS: Async Conflict -> Port A Wins (11)
+PASS: Async ROM Lookup OK
+
+==========================================
+ Verification Summary
+ Total Tests : 9
+ Passed      : 9
+ Failed      : 0
+==========================================
+tb_dual_port_memory.v:347: $finish called at 280000 (1ps)

@@ -1,0 +1,72 @@
+========vending machine testbench started=====
+
+--- Test Case 1: Reset Functionality ---
+VCD info: dumpfile vending_machine.vcd opened for output.
+Time=0 | Internal: total_amount= 0 | current_state=000 | next_state=000
+
+--- Test Case 2: Exact Payment (25 units) ---
+Time=40 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=50 | Internal: total_amount=25 | current_state=000 | next_state=000
+Time=70 | Internal: total_amount= 0 | current_state=000 | next_state=000
+
+--- Test Case 3: Multiple Coins - Exact Payment ---
+Time=80 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=90 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=110 | Internal: total_amount= 0 | current_state=000 | next_state=001
+Time=120 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=130 | Internal: total_amount=10 | current_state=000 | next_state=001
+Time=150 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=160 | Internal: total_amount= 0 | current_state=000 | next_state=010
+Time=170 | Internal: total_amount=10 | current_state=000 | next_state=000
+Time=190 | Internal: total_amount= 0 | current_state=000 | next_state=010
+
+--- Test Case 4: Overpayment Scenario ---
+Time=200 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=210 | Internal: total_amount=10 | current_state=000 | next_state=000
+Time=230 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=240 | Internal: total_amount= 0 | current_state=000 | next_state=010
+Time=250 | Internal: total_amount=25 | current_state=000 | next_state=000
+Time=270 | Internal: total_amount= 0 | current_state=000 | next_state=011
+
+--- Test Case 5: Insufficient Funds Test ---
+Time=280 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=290 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=310 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=360 | Internal: total_amount= 0 | current_state=000 | next_state=011
+Time=370 | Internal: total_amount=25 | current_state=000 | next_state=000
+Time=390 | Internal: total_amount= 0 | current_state=000 | next_state=010
+
+--- Test Case 6: Manual Selection Test ---
+Time=400 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=410 | Internal: total_amount=10 | current_state=000 | next_state=000
+Time=430 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=440 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=450 | Internal: total_amount=10 | current_state=000 | next_state=000
+Time=470 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=480 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=490 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=510 | Internal: total_amount= 0 | current_state=000 | next_state=000
+
+--- Test Case 7: Reset During Transaction ---
+Time=560 | Internal: total_amount= 0 | current_state=000 | next_state=001
+Time=570 | Internal: total_amount=10 | current_state=000 | next_state=000
+Time=590 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=600 | Internal: total_amount= 0 | current_state=000 | next_state=010
+Time=610 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=630 | Internal: total_amount= 0 | current_state=000 | next_state=000
+
+--- Test Case 8: Sequential Coin Insertion ---
+Time=680 | Internal: total_amount= 0 | current_state=000 | next_state=000
+Time=690 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=700 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=710 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=720 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=730 | Internal: total_amount= 5 | current_state=000 | next_state=011
+Time=740 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=750 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=760 | Internal: total_amount= 5 | current_state=000 | next_state=000
+Time=770 | Internal: total_amount= 5 | current_state=000 | next_state=001
+Time=790 | Internal: total_amount= 0 | current_state=000 | next_state=000
+
+=== All Test Cases Completed ===
+vending_machine_tb.v:148: $finish called at 850 (1s)

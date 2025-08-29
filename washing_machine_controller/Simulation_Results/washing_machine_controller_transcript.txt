@@ -1,0 +1,137 @@
+=== Washing Machine Controller Verification ===
+Time    State   [fill|motor|drain|soap|done]
+----------------------------------------------------
+Test 1: Power-on Reset
+Current State: IDLE
+5000    000     [0|0|0|0|0]
+15000   000     [0|0|0|0|0]
+Test 2: Complete Normal Wash Cycle
+25000   000     [0|0|0|0|0]
+Current State: FILL
+Entered FILL state
+35000   001     [1|0|0|1|0]
+45000   001     [1|0|0|1|0]
+55000   001     [1|0|0|1|0]
+Current State: WASH
+Entered WASH state
+65000   010     [0|1|0|0|0]
+75000   010     [0|1|0|0|0]
+85000   010     [0|1|0|0|0]
+95000   010     [0|1|0|0|0]
+105000  010     [0|1|0|0|0]
+115000  010     [0|1|0|0|0]
+Current State: RINSE
+Entered RINSE state
+125000  011     [1|1|0|0|0]
+135000  011     [1|1|0|0|0]
+145000  011     [1|1|0|0|0]
+155000  011     [1|1|0|0|0]
+Current State: SPIN
+Entered SPIN state
+165000  100     [0|1|1|0|0]
+175000  100     [0|1|1|0|0]
+185000  100     [0|1|1|0|0]
+Current State: DONE
+Entered DONE state
+195000  101     [0|0|0|0|1]
+Current State: IDLE
+205000  000     [0|0|0|0|0]
+Returned to IDLE state
+215000  000     [0|0|0|0|0]
+Test 3: Emergency Stop During FILL
+225000  000     [0|0|0|0|0]
+Current State: FILL
+235000  001     [1|0|0|1|0]
+245000  001     [1|0|0|1|0]
+Current State: IDLE
+Emergency stop executed in FILL
+255000  000     [0|0|0|0|0]
+Test 4: Emergency Stop During WASH
+265000  000     [0|0|0|0|0]
+Current State: FILL
+275000  001     [1|0|0|1|0]
+285000  001     [1|0|0|1|0]
+295000  001     [1|0|0|1|0]
+Current State: WASH
+305000  010     [0|1|0|0|0]
+Current State: IDLE
+Emergency stop executed in WASH
+315000  000     [0|0|0|0|0]
+Test 5: Emergency Stop During RINSE
+325000  000     [0|0|0|0|0]
+Current State: FILL
+335000  001     [1|0|0|1|0]
+345000  001     [1|0|0|1|0]
+355000  001     [1|0|0|1|0]
+Current State: WASH
+365000  010     [0|1|0|0|0]
+375000  010     [0|1|0|0|0]
+385000  010     [0|1|0|0|0]
+395000  010     [0|1|0|0|0]
+405000  010     [0|1|0|0|0]
+415000  010     [0|1|0|0|0]
+Current State: RINSE
+425000  011     [1|1|0|0|0]
+Current State: IDLE
+Emergency stop executed in RINSE
+435000  000     [0|0|0|0|0]
+Test 6: Emergency Stop During SPIN
+445000  000     [0|0|0|0|0]
+Current State: FILL
+455000  001     [1|0|0|1|0]
+465000  001     [1|0|0|1|0]
+475000  001     [1|0|0|1|0]
+Current State: WASH
+485000  010     [0|1|0|0|0]
+495000  010     [0|1|0|0|0]
+505000  010     [0|1|0|0|0]
+515000  010     [0|1|0|0|0]
+525000  010     [0|1|0|0|0]
+535000  010     [0|1|0|0|0]
+Current State: RINSE
+545000  011     [1|1|0|0|0]
+555000  011     [1|1|0|0|0]
+565000  011     [1|1|0|0|0]
+575000  011     [1|1|0|0|0]
+Current State: SPIN
+585000  100     [0|1|1|0|0]
+Current State: IDLE
+Emergency stop executed in SPIN
+595000  000     [0|0|0|0|0]
+Test 7: Reset During RINSE
+605000  000     [0|0|0|0|0]
+Current State: FILL
+615000  001     [1|0|0|1|0]
+625000  001     [1|0|0|1|0]
+635000  001     [1|0|0|1|0]
+Current State: WASH
+645000  010     [0|1|0|0|0]
+655000  010     [0|1|0|0|0]
+665000  010     [0|1|0|0|0]
+675000  010     [0|1|0|0|0]
+685000  010     [0|1|0|0|0]
+695000  010     [0|1|0|0|0]
+Current State: RINSE
+705000  011     [1|1|0|0|0]
+Current State: IDLE
+Reset executed in RINSE
+715000  000     [0|0|0|0|0]
+Test 8: Multiple Start Presses
+725000  000     [0|0|0|0|0]
+Current State: FILL
+735000  001     [1|0|0|1|0]
+745000  001     [1|0|0|1|0]
+Handled multiple start presses correctly
+755000  001     [1|0|0|1|0]
+Current State: WASH
+765000  010     [0|1|0|0|0]
+775000  010     [0|1|0|0|0]
+Current State: IDLE
+Test 9: No Start - Should remain in IDLE
+785000  000     [0|0|0|0|0]
+795000  000     [0|0|0|0|0]
+805000  000     [0|0|0|0|0]
+815000  000     [0|0|0|0|0]
+825000  000     [0|0|0|0|0]
+835000  000     [0|0|0|0|0]
+=== All Test Cases Completed Successfully ===

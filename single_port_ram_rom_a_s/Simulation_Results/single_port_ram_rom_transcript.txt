@@ -1,0 +1,134 @@
+====================================================
+Starting Single Port Memory System Verification
+====================================================
+
+--- Test Case 1: ROM Read Operations ---
+Testing synchronous ROM read operations...
+ROM Test  0 PASSED: Addr=0, Data=00
+ROM Test  1 PASSED: Addr=1, Data=11
+ROM Test  2 PASSED: Addr=2, Data=22
+ROM Test  3 PASSED: Addr=3, Data=33
+ROM Test  4 PASSED: Addr=4, Data=44
+ROM Test  5 PASSED: Addr=5, Data=55
+ROM Test  6 PASSED: Addr=6, Data=66
+ROM Test  7 PASSED: Addr=7, Data=77
+ROM Test  8 PASSED: Addr=8, Data=88
+ROM Test  9 PASSED: Addr=9, Data=99
+ROM Test 10 PASSED: Addr=a, Data=aa
+ROM Test 11 PASSED: Addr=b, Data=bb
+ROM Test 12 PASSED: Addr=c, Data=cc
+ROM Test 13 PASSED: Addr=d, Data=dd
+ROM Test 14 PASSED: Addr=e, Data=ee
+ROM Test 15 PASSED: Addr=f, Data=ff
+
+--- Test Case 2: Synchronous RAM Operations ---
+Testing Synchronous RAM operations...
+Writing test data to Sync RAM...
+Sync RAM Write: Addr=0, Data=24
+Sync RAM Write: Addr=1, Data=81
+Sync RAM Write: Addr=2, Data=09
+Sync RAM Write: Addr=3, Data=63
+Sync RAM Write: Addr=4, Data=0d
+Sync RAM Write: Addr=5, Data=8d
+Sync RAM Write: Addr=6, Data=65
+Sync RAM Write: Addr=7, Data=12
+Sync RAM Write: Addr=8, Data=01
+Sync RAM Write: Addr=9, Data=0d
+Sync RAM Write: Addr=a, Data=76
+Sync RAM Write: Addr=b, Data=3d
+Sync RAM Write: Addr=c, Data=ed
+Sync RAM Write: Addr=d, Data=8c
+Sync RAM Write: Addr=e, Data=f9
+Sync RAM Write: Addr=f, Data=c6
+Reading and verifying Sync RAM data...
+Sync RAM Test  0 FAILED: Addr=0, Expected=24, Got=00
+Sync RAM Test  1 PASSED: Addr=1, Data=81
+Sync RAM Test  2 PASSED: Addr=2, Data=09
+Sync RAM Test  3 PASSED: Addr=3, Data=63
+Sync RAM Test  4 PASSED: Addr=4, Data=0d
+Sync RAM Test  5 PASSED: Addr=5, Data=8d
+Sync RAM Test  6 PASSED: Addr=6, Data=65
+Sync RAM Test  7 PASSED: Addr=7, Data=12
+Sync RAM Test  8 PASSED: Addr=8, Data=01
+Sync RAM Test  9 PASSED: Addr=9, Data=0d
+Sync RAM Test 10 PASSED: Addr=a, Data=76
+Sync RAM Test 11 PASSED: Addr=b, Data=3d
+Sync RAM Test 12 PASSED: Addr=c, Data=ed
+Sync RAM Test 13 PASSED: Addr=d, Data=8c
+Sync RAM Test 14 PASSED: Addr=e, Data=f9
+Sync RAM Test 15 PASSED: Addr=f, Data=c6
+
+--- Test Case 3: Asynchronous RAM Operations ---
+Testing Asynchronous RAM operations...
+Writing test data to Async RAM...
+Async RAM Write: Addr=0, Data=a0
+Async RAM Write: Addr=1, Data=a1
+Async RAM Write: Addr=2, Data=a2
+Async RAM Write: Addr=3, Data=a3
+Async RAM Write: Addr=4, Data=a4
+Async RAM Write: Addr=5, Data=a5
+Async RAM Write: Addr=6, Data=a6
+Async RAM Write: Addr=7, Data=a7
+Async RAM Write: Addr=8, Data=a8
+Async RAM Write: Addr=9, Data=a9
+Async RAM Write: Addr=a, Data=aa
+Async RAM Write: Addr=b, Data=ab
+Async RAM Write: Addr=c, Data=ac
+Async RAM Write: Addr=d, Data=ad
+Async RAM Write: Addr=e, Data=ae
+Async RAM Write: Addr=f, Data=af
+Reading and verifying Async RAM data...
+Async RAM Test  0 PASSED: Addr=0, Data=a0
+Async RAM Test  1 PASSED: Addr=1, Data=a1
+Async RAM Test  2 PASSED: Addr=2, Data=a2
+Async RAM Test  3 PASSED: Addr=3, Data=a3
+Async RAM Test  4 PASSED: Addr=4, Data=a4
+Async RAM Test  5 PASSED: Addr=5, Data=a5
+Async RAM Test  6 PASSED: Addr=6, Data=a6
+Async RAM Test  7 PASSED: Addr=7, Data=a7
+Async RAM Test  8 PASSED: Addr=8, Data=a8
+Async RAM Test  9 PASSED: Addr=9, Data=a9
+Async RAM Test 10 PASSED: Addr=a, Data=aa
+Async RAM Test 11 PASSED: Addr=b, Data=ab
+Async RAM Test 12 PASSED: Addr=c, Data=ac
+Async RAM Test 13 PASSED: Addr=d, Data=ad
+Async RAM Test 14 PASSED: Addr=e, Data=ae
+Async RAM Test 15 PASSED: Addr=f, Data=af
+
+--- Test Case 4: Asynchronous ROM Operations ---
+Testing Asynchronous ROM read operations...
+Async ROM Test  0 PASSED: Addr=0, Data=00
+Async ROM Test  1 PASSED: Addr=1, Data=11
+Async ROM Test  2 PASSED: Addr=2, Data=22
+Async ROM Test  3 PASSED: Addr=3, Data=33
+Async ROM Test  4 PASSED: Addr=4, Data=44
+Async ROM Test  5 PASSED: Addr=5, Data=55
+Async ROM Test  6 PASSED: Addr=6, Data=66
+Async ROM Test  7 PASSED: Addr=7, Data=77
+Async ROM Test  8 PASSED: Addr=8, Data=88
+Async ROM Test  9 PASSED: Addr=9, Data=99
+Async ROM Test 10 PASSED: Addr=a, Data=aa
+Async ROM Test 11 PASSED: Addr=b, Data=bb
+Async ROM Test 12 PASSED: Addr=c, Data=cc
+Async ROM Test 13 PASSED: Addr=d, Data=dd
+Async ROM Test 14 PASSED: Addr=e, Data=ee
+Async ROM Test 15 PASSED: Addr=f, Data=ff
+
+--- Test Case 5: Reset Functionality ---
+Testing Reset functionality...
+Sync RAM Reset Test PASSED
+Async RAM Reset Test PASSED
+
+--- Test Case 6: Enable/Disable Control ---
+Testing Enable/Disable control...
+Enable control test completed
+
+====================================================
+VERIFICATION RESULTS SUMMARY
+====================================================
+Total Tests Run:          66
+Tests Failed:           0
+Tests Passed:          66
+STATUS:           ALL TESTS PASSED
+====================================================
+tb_memory_system_single_port.v:128: $finish called at 1357000 (1ps)

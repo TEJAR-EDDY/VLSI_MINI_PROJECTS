@@ -1,0 +1,235 @@
+=== Traffic Light Controller Verification Started ===
+Time: 0
+
+--- Test 1: Reset Functionality ---
+VCD info: dumpfile traffic_light_controller.vcd opened for output.
+
+Time    | State         | NS_Lights     | EW_Lights     | Timer
+--------|---------------|---------------|---------------|-------
+PASS: Reset properly initializes to NS_GREEN state
+Reset released at time 30000
+
+--- Test 2: Complete Cycle Verification ---
+Cycle 1: NS_GREEN phase - NS traffic flows
+35000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+45000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+55000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+65000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+75000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+85000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+95000   |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+105000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+115000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+125000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+135000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 10
+145000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 11
+155000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 12
+165000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 13
+175000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 14
+185000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 15
+195000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 16
+205000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 17
+215000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 18
+225000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 19
+235000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 20
+245000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 21
+255000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 22
+265000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 23
+275000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 24
+285000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 25
+295000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 26
+305000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 27
+315000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 28
+325000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 29
+Cycle 31: NS_YELLOW phase - NS prepares to stop
+335000  |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 0
+345000  |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 1
+355000  |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 2
+365000  |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 3
+375000  |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 4
+385000  |  ALL_RED1     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 0
+Cycle 36: ALL_RED1 phase - Safety gap
+395000  |  ALL_RED1     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 1
+405000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 0
+Cycle 38: EW_GREEN phase - EW traffic flows
+415000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 1
+425000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 2
+435000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 3
+445000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 4
+455000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 5
+465000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 6
+475000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 7
+485000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 8
+495000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 9
+505000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 10
+515000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 11
+525000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 12
+535000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 13
+545000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 14
+555000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 15
+565000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 16
+575000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 17
+585000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 18
+595000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 19
+605000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 20
+615000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 21
+625000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 22
+635000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 23
+645000  |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 24
+Cycle 63: EW_YELLOW phase - EW prepares to stop
+655000  |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 0
+665000  |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 1
+675000  |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 2
+685000  |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 3
+695000  |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 4
+705000  |  ALL_RED2     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 0
+Cycle 68: ALL_RED2 phase - Safety gap
+715000  |  ALL_RED2     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 1
+725000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+Cycle 70: Back to NS_GREEN - New cycle begins
+735000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+745000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+755000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+765000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+
+--- Test 3: Safety Verification ---
+775000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+785000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+795000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+805000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+815000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+825000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 10
+835000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 11
+845000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 12
+855000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 13
+865000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 14
+875000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 15
+885000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 16
+895000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 17
+905000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 18
+915000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 19
+925000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 20
+935000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 21
+945000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 22
+955000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 23
+965000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 24
+975000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 25
+985000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 26
+995000  |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 27
+1005000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 28
+1015000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 29
+1025000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 0
+1035000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 1
+1045000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 2
+1055000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 3
+1065000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 4
+1075000 |  ALL_RED1     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 0
+1085000 |  ALL_RED1     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 1
+1095000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 0
+1105000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 1
+1115000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 2
+1125000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 3
+1135000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 4
+1145000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 5
+1155000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 6
+1165000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 7
+1175000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 8
+1185000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 9
+1195000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 10
+1205000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 11
+1215000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 12
+1225000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 13
+1235000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 14
+1245000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 15
+1255000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 16
+1265000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 17
+1275000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 18
+1285000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 19
+1295000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 20
+1305000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 21
+1315000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 22
+1325000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 23
+1335000 |  EW_GREEN     | R:1 Y:0 G:0   | R:0 Y:0 G:1   | 24
+1345000 |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 0
+1355000 |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 1
+1365000 |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 2
+1375000 |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 3
+1385000 |  EW_YELLOW    | R:1 Y:0 G:0   | R:0 Y:1 G:0   | 4
+1395000 |  ALL_RED2     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 0
+1405000 |  ALL_RED2     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 1
+1415000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+1425000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+1435000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+1445000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+1455000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+1465000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+1475000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+1485000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+1495000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+1505000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+1515000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 10
+1525000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 11
+1535000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 12
+1545000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 13
+1555000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 14
+1565000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 15
+1575000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 16
+1585000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 17
+1595000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 18
+1605000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 19
+1615000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 20
+1625000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 21
+1635000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 22
+1645000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 23
+1655000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 24
+1665000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 25
+1675000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 26
+1685000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 27
+1695000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 28
+1705000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 29
+1715000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 0
+1725000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 1
+1735000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 2
+1745000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 3
+1755000 |  NS_YELLOW    | R:0 Y:1 G:0   | R:1 Y:0 G:0   | 4
+1765000 |  ALL_RED1     | R:1 Y:0 G:0   | R:1 Y:0 G:0   | 0
+
+--- Test 4: Multiple Reset Test ---
+1795000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+1805000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+1815000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+1825000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+1835000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+1845000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+1855000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+1865000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+1875000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+1885000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+1915000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+1925000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+1935000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+1945000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+1955000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+1965000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+1975000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+1985000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+1995000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+2005000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+2035000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 0
+2045000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 1
+2055000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 2
+2065000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 3
+2075000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 4
+2085000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 5
+2095000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 6
+2105000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 7
+2115000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 8
+2125000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 9
+
+=== Verification Summary ===
+Total clock cycles simulated: 75
+Total errors found: 0
+*** ALL TESTS PASSED - Traffic Light Controller is working correctly! ***       
+Simulation completed at time 2135000
+traffic_light_controller_tb.v:130: $finish called at 2135000 (1ps)
+2135000 |  NS_GREEN     | R:0 Y:0 G:1   | R:1 Y:0 G:0   | 10
