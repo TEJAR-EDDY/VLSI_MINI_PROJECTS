@@ -1,5 +1,4 @@
 
----
 
 # 🧺 Washing Machine Controller – FSM-Based RTL & Verification
 
@@ -36,8 +35,7 @@ This repository is part of my **self-learning VLSI journey** where I progressive
 📁 Test_Bench/          # Testbench code (stimulus, monitors, assertions)
 📁 Simulation_Results/  # VCD waveforms, logs, coverage reports
 📁 Reports_Final_docs/  # Project documentation, design report, synthesis results
-README.md               # Documentation
-LICENSE                 # License file
+
 ```
 
 ---
@@ -80,7 +78,7 @@ vvp washing_machine_tb
 gtkwave washing_machine.vcd
 ```
 
-✅ Expected state sequence:
+ Expected state sequence:
 
 ```
 IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
@@ -88,16 +86,16 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 
 ---
 
-## 📊 Verification Approach
+## Verification Approach
 
-### ✅ Current (Verilog Testbench)
+###  Current (Verilog Testbench)
 
 * Deterministic testbench with clock, reset, and stimulus
 * `$display` logs for state transitions & outputs
 * VCD waveform generation (`washing_machine.vcd`)
 * Basic assertions (reset → IDLE, done active only in DONE state)
 
-### 🚀 Future (Planned Enhancements)
+###  Future (Planned Enhancements)
 
 1. **SystemVerilog Assertions (SVA):**
 
@@ -126,9 +124,9 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 
 ---
 
-## 📊 Example Waveform (GTKWave)
+## Example Waveform (GTKWave)
 
-*(Add screenshot here)*
+*https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/blob/main/washing_machine_controller/Simulation_Results/sim_wave_form_wm_1.png*
 
 ---
 
@@ -142,7 +140,7 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 * Multiple wash programs (Quick, Delicate, Heavy)
 * Sensor integration (water level, temperature)
@@ -167,3 +165,4 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 ---
 
 👉 Do you also want me to create a **`README template.md`** that you can reuse for *all future VLSI projects* (e.g., SPI, I2C, UART, APB, AXI) so you just fill in sections instead of rewriting every time?
+
