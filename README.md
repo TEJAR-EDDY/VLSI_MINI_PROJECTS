@@ -1,4 +1,4 @@
-# VLSI Mini Projects in Verilog HDL 🚀  
+# VLSI Mini Projects in Verilog HDL 
 
 This repository contains my **self-developed VLSI mini projects** implemented in **Verilog HDL**.  
 I created these projects as part of my **self-learning journey** to improve RTL design, digital logic, and verification skills.  
