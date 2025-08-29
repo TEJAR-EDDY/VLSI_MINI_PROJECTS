@@ -72,10 +72,15 @@ vvp dual_port_memory_tb.vvp
 ### 3️⃣ View waveforms
 
 ```
-Below are example waveforms captured during simulation:
-
-https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/single_port_ram_rom_a_s/Simulation_Results
+gtkwave dual_port_memory.vcd
 ```
+---
+## 📊 Example Waveforms
+
+Below are example waveforms captured during simulation:
+  
+* https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/dual_port_ram_rom_a_s/Simulation_Results
+  
 ---
 
 ## 📊 Example Verification Scenarios
@@ -108,4 +113,5 @@ I built it to **strengthen my fundamentals in memory design**, FSM modeling, and
 Feel free to **fork, star ⭐, and suggest improvements**!
 
 ---
+
 
