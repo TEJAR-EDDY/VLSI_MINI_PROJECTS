@@ -1,11 +1,6 @@
 
 # 🥤 Vending Machine Controller – FSM in Verilog
 
-![Verilog](https://img.shields.io/badge/code-Verilog-blue)
-![SystemVerilog](https://img.shields.io/badge/verification-SystemVerilog-green)
-![UVM](https://img.shields.io/badge/framework-UVM-yellow)
-![Coverage](https://img.shields.io/badge/coverage-Functional%20%7C%20Code-orange)
-
 ---
 
 ## 📖 Project Overview
@@ -142,6 +137,7 @@ gtkwave vending_machine.vcd
 ---
 
 ✨ *This repo is my digital lab for **VLSI learning** – starting from RTL FSM design and growing into advanced verification with UVM and formal methods. Feedback and collaboration are always welcome!*
+
 
 
 
