@@ -1,66 +1,78 @@
+Here is your content formatted as a single, comprehensive README file in Markdown, suitable for direct use in your repository :
+
+```markdown
 # VLSI Mini Projects in Verilog HDL 🚀
 
-This repository contains my self-developed **VLSI mini projects** implemented in **Verilog HDL**.  
-I created these projects as part of my **self-learning journey** to strengthen RTL design, digital logic, and verification skills.  
-
+This repository contains self-developed **VLSI mini projects** implemented in **Verilog HDL**.  
+These projects were created as part of a **self-learning journey** to strengthen RTL design, digital logic, and verification skills.  
 Each project includes Verilog design files, testbenches, and simulation support.
 
 ---
 
 ## 📂 Project List
-- **[Dual Port RAM & ROM](./dual_port_ram_rom_a_s)**  
-- **[Single Port RAM & ROM](./single_port_ram_rom_a_s)**  
-- **[Synchronous & Asynchronous FIFO](./synchronous_asynchronous_fifo)**  
-- **[Traffic Light Controller](./traffic_light_controller)**  
-- **[Vending Machine Controller](./vending_machine_controller)**  
-- **[Washing Machine Controller](./washing_machine_controller)**  
+
+- **[Dual Port RAM & ROM](./dual_port_ram_rom_a_s)**
+- **[Single Port RAM & ROM](./single_port_ram_rom_a_s)**
+- **[Synchronous & Asynchronous FIFO](./synchronous_asynchronous_fifo)**
+- **[Traffic Light Controller](./traffic_light_controller)**
+- **[Vending Machine Controller](./vending_machine_controller)**
+- **[Washing Machine Controller](./washing_machine_controller)**
 
 ---
 
 ## 🛠️ Tools Used
-- **Icarus Verilog** → [Download Here](https://steveicarus.github.io/iverilog/)  
-- **GTKWave** (for waveform viewing) → [Download Here](http://gtkwave.sourceforge.net/)  
+
+- **Icarus Verilog**  
+  [Download Here](https://steveicarus.github.io/iverilog/)
+- **GTKWave** (for waveform viewing)  
+  [Download Here](http://gtkwave.sourceforge.net/)
 
 ---
 
 ## ▶️ How to Run the Projects
 
 1. **Clone this Repository**
-   ```bash
-   git clone https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE.git
-   cd VLSI_MINI_PROJECTS_FE
-Go to any Project Folder
+    ```
+    git clone https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE.git
+    cd VLSI_MINI_PROJECTS_FE
+    ```
 
-cd traffic_light_controller
+2. **Navigate to Any Project Folder**
+    ```
+    cd traffic_light_controller
+    ```
 
+3. **Compile the Design and Testbench**
+    ```
+    iverilog -o sim_out design.v testbench.v
+    ```
 
-Compile the Design and Testbench using Icarus Verilog
+4. **Run the Simulation**
+    ```
+    vvp sim_out
+    ```
 
-iverilog -o output design.v testbench.v
+5. **View the Waveform**
+    ```
+    gtkwave dump.vcd
+    ```
 
+---
 
-Run the Simulation
+## 📖 Learning Outcomes
 
-vvp output
+Through these projects, the following skills were gained:
+- RTL design and Verilog HDL coding
+- Testbench development and simulation
+- FSM-based digital system design
+- Memory architecture (RAM, ROM, FIFO)
+- Waveform analysis with GTKWave
+- Debugging and verification at IP level
 
+---
 
-View the Waveform
+## 🌟 About
 
-gtkwave dump.vcd
-
-📖 Learning Outcome
-
-Through these projects, I practiced:
-
-RTL coding in Verilog
-
-Writing effective testbenches
-
-Simulation and waveform analysis
-
-Understanding digital design concepts (FSMs, memory, and controllers)
-
-🌟 About
-
-This repository is part of my self-learning initiative in VLSI design and verification.
-It demonstrates my ability to design and verify digital circuits using industry-standard practices in Verilog HDL.
+This repository represents self-driven projects to enhance VLSI design and verification skills.  
+It demonstrates the practical application of digital logic concepts in Verilog HDL.
+```
