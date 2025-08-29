@@ -107,11 +107,7 @@ gtkwave vending_machine.vcd
 
 ## 📊 Example Waveform (GTKWave)
 
-*(Insert screenshot later)*
-
-```markdown
-![Waveform](Simulation_Results/vending_waveform.png)
-```
+*https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/vending_machine_controller/Simulation_Results*
 
 ---
 
@@ -146,5 +142,6 @@ gtkwave vending_machine.vcd
 ---
 
 ✨ *This repo is my digital lab for **VLSI learning** – starting from RTL FSM design and growing into advanced verification with UVM and formal methods. Feedback and collaboration are always welcome!*
+
 
 
