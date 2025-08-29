@@ -126,7 +126,7 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 
 ## Example Waveform (GTKWave)
 
-*[https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/blob/main/washing_machine_controller/Simulation_Results/sim_wave_form_wm_1.png](https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/washing_machine_controller/Simulation_Results]*
+*https://github.com/TEJAR-EDDY/VLSI_MINI_PROJECTS_FE/tree/main/washing_machine_controller/Simulation_Results*
 
 ---
 
@@ -159,6 +159,7 @@ IDLE → FILL → WASH → RINSE → SPIN → DONE → IDLE
 ---
 
 ✨ *This repo evolves from a simple Verilog FSM into a **complete verification-ready project**, demonstrating both RTL design and modern verification methodologies (UVM, coverage, formal). It’s my digital lab to showcase learning and growth in VLSI design & verification.*
+
 
 
 
